@@ -18,12 +18,14 @@ html,body
   padding:0;
   margin:0;
   list-style:none;
+  overflow-y: scroll;
   color:#999999;
 } 
 #menu_smartphone ul li {
-  height:70px;
+  height:50px;
+  font-family: arial;
+  font-size: 18px;
   padding-left:10px;
-  line-height:70px;
 } 
 #menu_smartphone ul li:hover {
   background:#f7f7f7;     
@@ -51,8 +53,8 @@ html,body
 }
 .name_profil
 {
-  font-size: 37px;
-  font-family: 'Roboto';
+  font-size: 20px;
+  font-family: arial;
   font-weight: 400;
   color: #666666;
   margin-top: -50px;
