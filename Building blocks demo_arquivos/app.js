@@ -1,10 +1,10 @@
 //segunda
-document.querySelector('#btn-segunda').addEventListener ('click', function () {
-  document.querySelector('#segunda').className = 'current';
+document.querySelector('#btn-S').addEventListener ('click', function () {
+  document.querySelector('#S').className = 'current';
   document.querySelector('[data-position="current"]').className = 'left';
 });
-document.querySelector('#btn-segunda-back').addEventListener ('click', function () {
-  document.querySelector('#segunda').className = 'right';
+document.querySelector('#btn-S-back').addEventListener ('click', function () {
+  document.querySelector('#S').className = 'right';
   document.querySelector('[data-position="current"]').className = 'current';
 });
 
@@ -47,4 +47,3 @@ document.querySelector('#btn-sexta-back').addEventListener ('click', function ()
   document.querySelector('#sexta').className = 'right';
   document.querySelector('[data-position="current"]').className = 'current';
 });
-

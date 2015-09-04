@@ -91,6 +91,10 @@
   border: none;
 }
 
+#li-S{
+  background: #03A9F4 ;
+}
+
 /* Pressed State */
 li a:active {
   background-color: transparent; /* remove default color for active state */
