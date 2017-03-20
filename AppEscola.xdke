@@ -15,5 +15,13 @@
         "prefix": "tinyhippos-"
       }
     }
+  },
+  "build-tab": {
+    "selectedTargets": [
+      "CORDOVA_ANDROID",
+      "CORDOVA_WINDOWS_UAP",
+      "CORDOVA_WINDOWS8",
+      "CORDOVA_WP8"
+    ]
   }
 }

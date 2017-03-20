@@ -6,7 +6,7 @@
       "projectTypeName": "com.intel.xdk.projecttype.webapp",
       "src": "",
       "projectGuid": "8d9a56a9-5666-41bd-9e8c-f5d00bbdc578",
-      "lastModifiedDate": 1490035147329,
+      "lastModifiedDate": 1490036026614,
       "creationDate": 1441401300537
     },
     "sourceDirectory": "",
@@ -209,7 +209,8 @@
         "preferences_": {
           "android-minSdkVersion": "14",
           "android-targetSdkVersion": "19",
-          "android-installLocation": "auto"
+          "android-installLocation": "auto",
+          "Fullscreen": true
         },
         "isActive_": true,
         "certificateId_": "",
@@ -229,7 +230,7 @@
         "excludedLibraries_": "",
         "appVersion_": "0.0.1",
         "appVersionCode_": "1",
-        "crosswalkVersion_": "11",
+        "crosswalkVersion_": "shared",
         "cordovaCLIVersion_": "4.1.2"
       }
     },
