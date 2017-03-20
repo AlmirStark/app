@@ -1,689 +1,427 @@
-<!DOCTYPE html>
-<html>
-    
-    <head>
-        <meta charset="utf-8">
-        <title>App</title>
-        <meta name="description" content="App">
-        
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-    </head>
-<body>
-<section class="SectionAlfa">        
-     <header class="HeaderBeneficios">            
-           <div class="ImgHeaderAlfa">
-                 <img class="HexagonoHeader" src="img/Icons/hexagon1.svg">
-                  <img class="ImgHeaderIcon" src="img/Icons/ideia.svg">
-          </div>            
-         <p class="PHeaderN">Beneficios</p>            
-    </header>
-        
-    <section class="Inicial Fundo">        
-                  <img  class="Img-Fundo" src="img/fundo-azul.jpg">        
-                     <div class="Scroll">
-                   <div class="containerI">
-                   <img class="ImgAvataLogoI" src="img/Icons/ideia.svg">
-
-          <form>
-          
-            
-          <div class="groupI">      
-            <input  class="InputI" type="text" required data-ng-model="beneficio.nome">
-            <span class="highlightI"></span>
-            <span class="barI"></span>
-            <label class="labelI">Nome:</label>
-          </div>
-            
-          <div class="groupI">      
-            <input  class="InputI" type="NUmber" required data-ng-model="beneficio.cpf">
-            <span class="highlightI"></span>
-            <span class="barI"></span>
-            <label class="labelI">CPF:</label>
-          </div>
-            
-          <div class="groupI">      
-            <input  class="InputI" type="text" required data-ng-model="beneficio.endereco">
-            <span class="highlightI"></span>
-            <span class="barI"></span>
-            <label class="labelI">Endereço:</label>
-          </div>
-              
-              
-               <div class="AjudaDeCustos SelecioneSetor">
-              <div class="DivSelect">
-                <p class="PBN1">Selecione o Setor</p>
-          <div class="select-style">
-              <select class="SelectBeneficios" data-ng-model="beneficio.secretaria">
-                  <option value="volvo">Secretaria de Cultura</option>
-                  <option value="saab">Saab</option>
-                  <option value="mercedes">Mercedes</option>
-                  <option value="audi">Audi</option>
-              </select>
-          </div>
-          </div>
-              </div>
-              
-               <div class="AjudaDeCustos SelecioneBeneficios">
-          <div class="DivSelect">
-                <p class="PBN1">Selecione o Beneficios</p>
-                <div class="select-style">
-                    <select class="SelectBeneficios" data-ng-model="beneficio.beneficio">
-                        <option value="viagem">Viagem</option>
-                        <option value="dinheiro">dinheiro</option>
-                        <option value="remedio">remedio</option>
-                        <option value="Outro">Outro</option>
-                    </select>
-                </div>
-
-          </div>
-              </div>
-            
-              
-              <div class="AjudaDeCustos AjudaDeCusto">
-                <p class="PBN1">Ajuda de custo</p>
-                <input class="inputBeneficiosNone3" required="" placeholder="R$ 500,00" type="number">
-              </div>
-              
-              
-              
-              <div class="AjudaDeCustos AjudaDeCustos5 Viagem">
-                <p class="PBN1">Viagem</p>
-   
-                 
-                <input class="InputBuscaRemedio" required="" placeholder="Tipo" name="Viagem" type="checkbox" id="DivBuscaViagem">
-                <label class="DivBuscaRemedio3" for="DivBuscaViagem">Local</label>
-                  
-                  <div class="DivBuscaRemedio">
-                    <div class="DivEstatisticaBeneficios BuscaLT2">
-                     <input  id="EstMoradia" type="checkbox" >
-                     <label class="buscaLT" for="EstMoradia"><img src="img/Icons/lupa.svg"></label>
-                    <input class="IPEstatisticaMoradia1" title="text" placeholder="Buscar poor comunidades">
-            </div>
-                    
-                      <div class="SubMenuBeneficios7">
-                    <input class="inputMAgricultura inputBeneficiosBtf" id="PauloAfonso" name="Viagem"  type="radio"  name="" value="">
-                    <div class="DivSubMenuBeneficios7">
-                        <label class="LabelBtnT" for="PauloAfonso">
-                            <p class="PBeneficiosBPf">Paulo Afonso</p> </label>
-                     </div>
-                   </div>
-                      
-                      <div class="SubMenuBeneficios7">
-                    <input class="inputMAgricultura inputBeneficiosBtf" id="Coruripe" name="Viagem"  type="radio"  name="" value="">
-                    <div class="DivSubMenuBeneficios7">
-                        <label class="LabelBtnT" for="Coruripe">
-                            <p class="PBeneficiosBPf">Coruripe</p> </label>
-                     </div>
-                   </div>
-                      
-                      <div class="SubMenuBeneficios7">
-                    <input class="inputMAgricultura inputBeneficiosBtf" id="Maceio" name="Viagem"  type="radio"  name="" value="">
-                    <div class="DivSubMenuBeneficios7">
-                        <label class="LabelBtnT" for="Maceio">
-                            <p class="PBeneficiosBPf">Maceio</p> </label>
-                     </div>
-                   </div>
-                      <div class="SubMenuBeneficios7">
-                    <input class="inputMAgricultura inputBeneficiosBtf" id="Garanhuns" name="Viagem"  type="radio"  name="" value="">
-                    <div class="DivSubMenuBeneficios7">
-                        <label class="LabelBtnT" for="Garanhuns">
-                            <p class="PBeneficiosBPf">Garanhuns</p> </label>
-                     </div>
-                   </div>
-                      <div class="SubMenuBeneficios7">
-                    <input class="inputMAgricultura inputBeneficiosBtf" id="Recife" name="Viagem"  type="radio"  name="" value="">
-                    <div class="DivSubMenuBeneficios7">
-                        <label class="LabelBtnT" for="Recife">
-                            <p class="PBeneficiosBPf">Recife</p> </label>
-                     </div>
-                   </div>
-                       <div class="SubMenuBeneficios7">
-                    <input class="inputMAgricultura inputBeneficiosBtf" id="Aracaju" name="Viagem"  type="radio"  name="" value="">
-                    <div class="DivSubMenuBeneficios7">
-                        <label class="LabelBtnT" for="Aracaju">
-                            <p class="PBeneficiosBPf">Aracaju</p> </label>
-                     </div>
-                   </div>
-                      
-                      
-                  </div>
-                  
-              </div>
-              
-              <div class="AjudaDeCustos AjudaDeCustos5 Viagem">
-                <p class="PBN1">Passagem</p>
-   
-                 
-                <input class="InputBuscaRemedio" required="" placeholder="Tipo" name="Passagem" type="checkbox" id="DivBuscaPassagem">
-                <label class="DivBuscaRemedio3" for="DivBuscaPassagem">Local</label>
-                  
-                  <div class="DivBuscaRemedio">
-                    <div class="DivEstatisticaBeneficios BuscaLT2">
-                     <input  id="EstMoradia" type="checkbox" >
-                     <label class="buscaLT" for="EstMoradia"><img src="img/Icons/lupa.svg"></label>
-                    <input class="IPEstatisticaMoradia1" title="text" placeholder="Buscar poor comunidades">
-            </div>
-                    
-                      <div class="SubMenuBeneficios7">
-                    <input class="inputMAgricultura inputBeneficiosBtf" id="PauloAfonso" name="Passagem"  type="radio"  name="" value="">
-                    <div class="DivSubMenuBeneficios7">
-                        <label class="LabelBtnT" for="PauloAfonso">
-                            <p class="PBeneficiosBPf">Paulo Afonso</p> </label>
-                     </div>
-                   </div>
-                      
-                      <div class="SubMenuBeneficios7">
-                    <input class="inputMAgricultura inputBeneficiosBtf" id="CoruripeP" name="Passagem"  type="radio"  name="" value="">
-                    <div class="DivSubMenuBeneficios7">
-                        <label class="LabelBtnT" for="CoruripeP">
-                            <p class="PBeneficiosBPf">Coruripe</p> </label>
-                     </div>
-                   </div>
-                      
-                      <div class="SubMenuBeneficios7">
-                    <input class="inputMAgricultura inputBeneficiosBtf" id="MaceioP" name="Passagem"  type="radio"  name="" value="">
-                    <div class="DivSubMenuBeneficios7">
-                        <label class="LabelBtnT" for="MaceioP">
-                            <p class="PBeneficiosBPf">Maceio</p> </label>
-                     </div>
-                   </div>
-                      <div class="SubMenuBeneficios7">
-                    <input class="inputMAgricultura inputBeneficiosBtf" id="GaranhunsP" name="Passagem"  type="radio"  name="" value="">
-                    <div class="DivSubMenuBeneficios7">
-                        <label class="LabelBtnT" for="GaranhunsP">
-                            <p class="PBeneficiosBPf">Garanhuns</p> </label>
-                     </div>
-                   </div>
-                      <div class="SubMenuBeneficios7">
-                    <input class="inputMAgricultura inputBeneficiosBtf" id="RecifeP" name="Passagem"  type="radio"  name="" value="">
-                    <div class="DivSubMenuBeneficios7">
-                        <label class="LabelBtnT" for="RecifeP">
-                            <p class="PBeneficiosBPf">Recife</p> </label>
-                     </div>
-                   </div>
-                       <div class="SubMenuBeneficios7">
-                    <input class="inputMAgricultura inputBeneficiosBtf" id="Aracaju" name="Passagem"  type="radio"  name="" value="">
-                    <div class="DivSubMenuBeneficios7">
-                        <label class="LabelBtnT" for="Aracaju">
-                            <p class="PBeneficiosBPf">Aracaju</p> </label>
-                     </div>
-                   </div>
-                      
-                      
-                  </div>
-                  
-              </div>
-                    
-              
-              <div class="AjudaDeCustos Remedio">
-                <p class="PBN1">Remedio</p>
-                  
-                   <div class="DivSelect">
-                <div class="select-style">
-                    <select class="SelectBeneficios" data-ng-model="beneficio.beneficio">
-                        <option value="Quantos">Quantos tipos de remedios</option>
-                        <option value="dinheiro">dinheiro</option>
-                        <option value="remedio">remedio</option>
-                        <option value="Outro">Outro</option>
-                    </select>
-                </div>
-
-          </div>
-                 
-                  <div class="PLM">
-                <input class="InputBuscaRemedio" required="" placeholder="Tipo" name="Exame" type="checkbox" id="DivBuscaRemedio3">
-                <label class="DivBuscaRemedio3" for="DivBuscaRemedio">Qual o remedio</label>
-                  
-                  <div class="DivBuscaRemedio">
-                    <div class="DivEstatisticaBeneficios BuscaLT2">
-                     <input  id="EstMoradia" type="checkbox" >
-                     <label class="buscaLT" for="EstMoradia"><img src="img/Icons/lupa.svg"></label>
-                    <input class="IPEstatisticaMoradia1" title="text" placeholder="Buscar poor comunidades">
-            </div>
-                    
-                      <div class="SubMenuBeneficios7">
-                    <input class="inputMAgricultura inputBeneficiosBtf" id="Remedio1" name="Radio10"  type="radio"  name="" value="">
-                    <div class="DivSubMenuBeneficios7">
-                        <label class="LabelBtnT" for="Remedio1">
-                            <p class="PBeneficiosBPf">Remedio 1</p> </label>
-                     </div>
-                   </div>
-                      
-                      <div class="SubMenuBeneficios7">
-                    <input class="inputMAgricultura inputBeneficiosBtf" id="Remedio2" name="Radio10"  type="radio"  name="" value="">
-                    <div class="DivSubMenuBeneficios7">
-                        <label class="LabelBtnT" for="Remedio2">
-                            <p class="PBeneficiosBPf">Remedio 2</p> </label>
-                     </div>
-                   </div>
-                      
-                      <div class="SubMenuBeneficios7">
-                    <input class="inputMAgricultura inputBeneficiosBtf" id="Remedio2" name="Radio10"  type="radio"  name="" value="">
-                    <div class="DivSubMenuBeneficios7">
-                        <label class="LabelBtnT" for="Remedio2">
-                            <p class="PBeneficiosBPf">Remedio 2</p> </label>
-                     </div>
-                   </div>
-                      <div class="SubMenuBeneficios7">
-                    <input class="inputMAgricultura inputBeneficiosBtf" id="Remedio2" name="Radio10"  type="radio"  name="" value="">
-                    <div class="DivSubMenuBeneficios7">
-                        <label class="LabelBtnT" for="Remedio2">
-                            <p class="PBeneficiosBPf">Remedio 2</p> </label>
-                     </div>
-                   </div>
-                      <div class="SubMenuBeneficios7">
-                    <input class="inputMAgricultura inputBeneficiosBtf" id="Remedio2" name="Radio10"  type="radio"  name="" value="">
-                    <div class="DivSubMenuBeneficios7">
-                        <label class="LabelBtnT" for="Remedio2">
-                            <p class="PBeneficiosBPf">Remedio 2</p> </label>
-                     </div>
-                   </div>
-                       <div class="SubMenuBeneficios7">
-                    <input class="inputMAgricultura inputBeneficiosBtf" id="Remedio2" name="Radio10"  type="radio"  name="" value="">
-                    <div class="DivSubMenuBeneficios7">
-                        <label class="LabelBtnT" for="Remedio2">
-                            <p class="PBeneficiosBPf">Remedio 2</p> </label>
-                     </div>
-                   </div>
-                      
-                      
-                  </div>
-                  
-                  
-          <div class="DivSelect">
-                <div class="select-style">
-                    <select class="SelectBeneficios" data-ng-model="beneficio.beneficio">
-                        <option value="Quantos remedios">Quantos remedios</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                    </select>
-                </div>
-
-          </div>
-                      </div>
-              </div>
-              
-              <div class="AjudaDeCustos Racao">
-                <p class="PBN1">Ração</p>
-                  
-                   <div class="DivSelect">
-                <div class="select-style">
-                    <select class="SelectBeneficios" data-ng-model="beneficio.beneficio">
-                        <option value="Quantos">Quantos</option>
-                        <option value="dinheiro">dinheiro</option>
-                        <option value="remedio">remedio</option>
-                        <option value="Outro">Outro</option>
-                    </select>
-                </div>
-
-          </div>
-                                    
-              </div>
-              
-              <div class="AjudaDeCustos LimpezaDeBarragem">
-                <p class="PBN1">Limpeza de barragem</p>
-                  <input class="inputBeneficiosNone3" required="" placeholder="Quantas horas" type="number">                
-              </div>
-              
-              <div class="AjudaDeCustos PocoArtesiano">
-                <p class="PBN1">Poço Artesiano</p>
-                  <input class="inputBeneficiosNone3" required="" placeholder="Quantos Metros" type="number">                
-              </div>
-              
-              <div class="AjudaDeCustos AjudaDeCustos4 Combustivel">
-                <p class="PBN1">Combustivel</p> 
-                
-              <div class="SubMenuBeneficios8">
-                    <input class="inputMAgricultura inputBeneficiosBtf" id="Combustivel1" name="Radio1"  type="radio"  name="" value="">
-                    <div class="DivSubMenuBeneficios7">
-                        <label class="LabelBtnT LabelBtnT2" for="Combustivel1">
-                            <p class="PBeneficiosBPf">Diesel</p> </label>
-                     </div>
-                   </div>
-                  
-                   <div class="SubMenuBeneficios8">
-                    <input class="inputMAgricultura inputBeneficiosBtf" id="Combustivel2" name="Radio1"  type="radio"  name="" value="">
-                    <div class="DivSubMenuBeneficios7">
-                        <label class="LabelBtnT LabelBtnT2" for="Combustivel2">
-                            <p class="PBeneficiosBPf">Gasolina</p> </label>
-                     </div>
-                   </div>
-                  
-              </div>
-              
-              <div class="AjudaDeCustos Contrato">
-                <p class="PBN1">Contrato</p>
-                  <input class="inputBeneficiosNone3" required="" placeholder="Valor" type="number">                
-              </div>
-              
-              <div class="AjudaDeCustos Exame">
-                <p class="PBN1">Exame</p>
-                  
-                   <div class="DivSelect">
-                <div class="select-style">
-                    <select class="SelectBeneficios" data-ng-model="beneficio.beneficio">
-                        <option value="Quantos">Quantos tipos de remedios</option>
-                        <option value="dinheiro">dinheiro</option>
-                        <option value="remedio">remedio</option>
-                        <option value="Outro">Outro</option>
-                    </select>
-                </div>
-
-          </div>
-                 
-                  <div class="PLM">
-                <input class="InputBuscaRemedio" required="" placeholder="Tipo" name="Exame" type="checkbox" id="DivBuscaRemedio">
-                <label class="DivBuscaRemedio3" for="DivBuscaRemedio">Qual o remedio</label>
-                  
-                  <div class="DivBuscaRemedio">
-                    <div class="DivEstatisticaBeneficios BuscaLT2">
-                     <input  id="EstMoradia" type="checkbox" >
-                     <label class="buscaLT" for="EstMoradia"><img src="img/Icons/lupa.svg"></label>
-                    <input class="IPEstatisticaMoradia1" title="text" placeholder="Buscar poor comunidades">
-            </div>
-                    
-                      <div class="SubMenuBeneficios7">
-                    <input class="inputMAgricultura inputBeneficiosBtf" id="Exame1" name="Exame"  type="radio"  name="" value="">
-                    <div class="DivSubMenuBeneficios7">
-                        <label class="LabelBtnT" for="Exame1">
-                            <p class="PBeneficiosBPf">Exame 1</p> </label>
-                     </div>
-                   </div>
-                      
-                      <div class="SubMenuBeneficios7">
-                    <input class="inputMAgricultura inputBeneficiosBtf" id="Exame2" name="Exame"  type="radio"  name="" value="">
-                    <div class="DivSubMenuBeneficios7">
-                        <label class="LabelBtnT" for="Exame2">
-                            <p class="PBeneficiosBPf">Exame 2</p> </label>
-                     </div>
-                   </div>
-                      
-                      <div class="SubMenuBeneficios7">
-                    <input class="inputMAgricultura inputBeneficiosBtf" id="Exame3" name="Exame"  type="radio"  name="" value="">
-                    <div class="DivSubMenuBeneficios7">
-                        <label class="LabelBtnT" for="Exame3">
-                            <p class="PBeneficiosBPf"> Exame 3 </p> </label>
-                     </div>
-                   </div>
-                      <div class="SubMenuBeneficios7">
-                    <input class="inputMAgricultura inputBeneficiosBtf" id="Exame4" name="Exame"  type="radio"  name="" value="">
-                    <div class="DivSubMenuBeneficios7">
-                        <label class="LabelBtnT" for="Exame4">
-                            <p class="PBeneficiosBPf">Exame 4</p> </label>
-                     </div>
-                   </div>
-                      <div class="SubMenuBeneficios7">
-                    <input class="inputMAgricultura inputBeneficiosBtf" id="Remedio2" name="Exame"  type="radio"  name="" value="">
-                    <div class="DivSubMenuBeneficios7">
-                        <label class="LabelBtnT" for="Remedio2">
-                            <p class="PBeneficiosBPf">Remedio 2</p> </label>
-                     </div>
-                   </div>
-                       <div class="SubMenuBeneficios7">
-                    <input class="inputMAgricultura inputBeneficiosBtf" id="Remedio2" name="Exame"  type="radio"  name="" value="">
-                    <div class="DivSubMenuBeneficios7">
-                        <label class="LabelBtnT" for="Remedio2">
-                            <p class="PBeneficiosBPf">Remedio 2</p> </label>
-                     </div>
-                   </div>
-                      
-                      
-                  </div>
-                  
-                  
-          <div class="DivSelect">
-                <div class="select-style">
-                    <select class="SelectBeneficios" data-ng-model="beneficio.beneficio">
-                        <option value="Quantos remedios">Quantos remedios</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                    </select>
-                </div>
-
-          </div>
-                      </div>
-              </div>
-              
-              <div class="AjudaDeCustos ConsultaMedica">
-                <p class="PBN1">Consulta medica</p>
-                  
-                   <div class="DivSelect">
-                <div class="select-style">
-                    <select class="SelectBeneficios" data-ng-model="beneficio.beneficio">
-                        <option value="Quantos">Quantos tipos de remedios</option>
-                        <option value="dinheiro">dinheiro</option>
-                        <option value="remedio">remedio</option>
-                        <option value="Outro">Outro</option>
-                    </select>
-                </div>
-
-          </div>
-                 
-                  <div class="PLM">
-                <input class="InputBuscaRemedio" required="" placeholder="Tipo" name="Consulta" type="checkbox" id="DivBuscaConsulta">
-                <label class="DivBuscaRemedio3" for="DivBuscaConsulta">Consulta medica</label>
-                  
-                  <div class="DivBuscaRemedio">
-                    <div class="DivEstatisticaBeneficios BuscaLT2">
-                     <input  id="EstMoradia" type="checkbox" >
-                     <label class="buscaLT" for="EstMoradia"><img src="img/Icons/lupa.svg"></label>
-                    <input class="IPEstatisticaMoradia1" title="text" placeholder="Buscar poor comunidades">
-            </div>
-                    
-                      <div class="SubMenuBeneficios7">
-                    <input class="inputMAgricultura inputBeneficiosBtf" id="Consulta1" name="Consulta"  type="radio"  name="" value="">
-                    <div class="DivSubMenuBeneficios7">
-                        <label class="LabelBtnT" for="Consulta1">
-                            <p class="PBeneficiosBPf">Consulta 1</p> </label>
-                     </div>
-                   </div>
-                      
-                      <div class="SubMenuBeneficios7">
-                    <input class="inputMAgricultura inputBeneficiosBtf" id="Consulta2" name="Consulta"  type="radio"  name="" value="">
-                    <div class="DivSubMenuBeneficios7">
-                        <label class="LabelBtnT" for="Consulta2">
-                            <p class="PBeneficiosBPf">Consulta 2</p> </label>
-                     </div>
-                   </div>
-                      
-                      <div class="SubMenuBeneficios7">
-                    <input class="inputMAgricultura inputBeneficiosBtf" id="Consulta3" name="Consulta"  type="radio"  name="" value="">
-                    <div class="DivSubMenuBeneficios7">
-                        <label class="LabelBtnT" for="Consulta3">
-                            <p class="PBeneficiosBPf"> Consulta 3 </p> </label>
-                     </div>
-                   </div>
-                      <div class="SubMenuBeneficios7">
-                    <input class="inputMAgricultura inputBeneficiosBtf" id="Consulta4" name="Consulta"  type="radio"  name="" value="">
-                    <div class="DivSubMenuBeneficios7">
-                        <label class="LabelBtnT" for="Consulta4">
-                            <p class="PBeneficiosBPf">Consulta 4</p> </label>
-                     </div>
-                   </div>
-                      <div class="SubMenuBeneficios7">
-                    <input class="inputMAgricultura inputBeneficiosBtf" id="Remedio2" name="Consulta"  type="radio"  name="" value="">
-                    <div class="DivSubMenuBeneficios7">
-                        <label class="LabelBtnT" for="Remedio2">
-                            <p class="PBeneficiosBPf">Remedio 2</p> </label>
-                     </div>
-                   </div>
-                       <div class="SubMenuBeneficios7">
-                    <input class="inputMAgricultura inputBeneficiosBtf" id="Remedio2" name="Consulta"  type="radio"  name="" value="">
-                    <div class="DivSubMenuBeneficios7">
-                        <label class="LabelBtnT" for="Remedio2">
-                            <p class="PBeneficiosBPf">Remedio 2</p> </label>
-                     </div>
-                   </div>
-                      
-                      
-                  </div>
-                  
-                  
-          <div class="DivSelect">
-                <div class="select-style">
-                    <select class="SelectBeneficios" data-ng-model="beneficio.beneficio">
-                        <option value="Quantos remedios">Quantos remedios</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                    </select>
-                </div>
-
-          </div>
-                      </div>
-              </div>
-              
-              <div class="AjudaDeCustos AjudaDeCustos4 EquipamentosHospitalares">
-                <p class="PBN1">Equipamentos hospitalares</p> 
-                
-                  <div class="SubMenuBeneficios9">
-                    <input class="inputMAgricultura inputBeneficiosBtf" id="Cadeira" name="Equipamentos"  type="radio"  name="" value="">
-                    <div class="DivSubMenuBeneficios7">
-                        
-                        <label class="LabelBtnT LabelBtnT2 DivSubMenuBeneficios8" for="Cadeira">
-                            <p class="PBeneficiosBPf">Cadeira de rodas</p> 
-                            <div class="DivSelect">
-                                
-                                <div class="select-style">
-                                    <select class="SelectBeneficios" data-ng-model="beneficio.beneficio">
-                                        <option value="Quantos">Quantas Cadeira de rodas</option>
-                                        <option value="dinheiro">dinheiro</option>
-                                        <option value="remedio">remedio</option>
-                                        <option value="Outro">Outro</option>
-                                    </select>
-                                </div>
-
-                            </div>
-                        </label>
-                        
-                     </div>
-                   </div>
-                  
-                  <div class="SubMenuBeneficios9">
-                    <input class="inputMAgricultura inputBeneficiosBtf" id="Oculos" name="Equipamentos"  type="radio"  name="" value="">
-                    <div class="DivSubMenuBeneficios7">
-                        
-                        <label class="LabelBtnT LabelBtnT2 DivSubMenuBeneficios8" for="Oculos">
-                            <p class="PBeneficiosBPf">Oculos</p> 
-                            <div class="DivSelect">
-                                
-                                <div class="select-style">
-                                    <select class="SelectBeneficios" data-ng-model="beneficio.beneficio">
-                                        <option value="Quantos">Quantos Oculos</option>
-                                        <option value="dinheiro">dinheiro</option>
-                                        <option value="remedio">remedio</option>
-                                        <option value="Outro">Outro</option>
-                                    </select>
-                                </div>
-
-                            </div>
-                        </label>
-                        
-                     </div>
-                   </div>
-                  
-                  <div class="SubMenuBeneficios9">
-                    <input class="inputMAgricultura inputBeneficiosBtf" id="auditivo" name="Equipamentos"  type="radio"  name="" value="">
-                    <div class="DivSubMenuBeneficios7">
-                        
-                        
-                        <label class="LabelBtnT LabelBtnT2 DivSubMenuBeneficios8" for="auditivo">
-                            <p class="PBeneficiosBPf">Aparelho auditivo</p> 
-                            <div class="DivSelect">
-                                
-                                <div class="select-style">
-                                    <select class="SelectBeneficios" data-ng-model="beneficio.beneficio">
-                                        <option value="Quantos">Quantos Aparelho auditivo</option>
-                                        <option value="dinheiro">dinheiro</option>
-                                        <option value="remedio">remedio</option>
-                                        <option value="Outro">Outro</option>
-                                    </select>
-                                </div>
-
-                            </div>
-                        </label>
-                        
-                     </div>
-                   </div>
-                  
-                   <div class="SubMenuBeneficios9">
-                    <input class="inputMAgricultura inputBeneficiosBtf" id="Muletas" name="Equipamentos"  type="radio"  name="" value="">
-                    <div class="DivSubMenuBeneficios7">
-                        
-                        <label class="LabelBtnT LabelBtnT2 DivSubMenuBeneficios8" for="Muletas">
-                            <p class="PBeneficiosBPf">Muletas</p> 
-                            <div class="DivSelect">
-                                
-                                <div class="select-style">
-                                    <select class="SelectBeneficios" data-ng-model="beneficio.beneficio">
-                                        <option value="Quantos">Quantas Muletas</option>
-                                        <option value="dinheiro">dinheiro</option>
-                                        <option value="remedio">remedio</option>
-                                        <option value="Outro">Outro</option>
-                                    </select>
-                                </div>
-
-                            </div>
-                        </label>
-                    
-                     </div>
-                   </div>
-                  
-              </div>
-              
-          </form>
-          </div>
-              
-              </div>
-
-               <input  class="EfeitoNinja" id="Efeitoninja" type="radio"  >
-                     <div>
-                        <div class="toggleNinja">
-                            <label class="LabelBtn" for="Efeitoninja" ng-click="cadastrarBeneficio(beneficio)"><img src="img/Icons/air.svg"></label>
-                        </div>         
-                     </div>
-       
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><style id="__react-native-style">/* React Native */
+html {font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:rgba(0,0,0,0)}
+body {margin:0}
+button::-moz-focus-inner, input::-moz-focus-inner {border:0;padding:0}
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {display:none}
+.__style_df {display:-webkit-box;display:-moz-box;display:-ms-flexbox;}
+.__style_pea, .__style_pebo, .__style_pebn * {pointer-events:auto}
+.__style_pen, .__style_pebo *, .__style_pen {pointer-events:none}
+    </style>
+    <link rel="stylesheet" type="text/css" href="stylo.css">
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" type="image/x-icon" href="https://production-assets.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico">
+  <link rel="mask-icon" type="" href="https://production-assets.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111">
+  <title>TicTacToe App</title>
   
+  
+  
+  
+  
+  <script>
+  window.console = window.console || function(t) {};
+</script>
 
   
-          <div class="Enviado">
-                    <p>{{codeBeneficios}}</p>
-              <a data-ng-click="backTo()" ><button>Cadastrar Novo</button></a>
-          </div>
+  
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
 
-          <div class="Linha"></div> 
+</head>
 
-          <div class="Voo"><img src="img/Icons/air.svg"></div>
-
-
-</section>
+<body translate="no">
     
-        
-            </div>
-        </section>
-</body>
-</html>
+      <header><p>Jogo Da Velha</p></header>
+    
+    <input type="checkbox" id="IP">
+    <label for="IP"><img src="menu.svg"></label>
+    <div class="DivIP">
+        <img class="Img1" src="fundo.jpg">
+        <img class="Img2" src="p.jpg">
+        <p class="P1">Almir Stark</p>
+        <p class="P2"><span><img src="Email.svg"></span>Almirsantos05@gmail.com</p>
+        <p class="P4"><span><img src="twt.svg"></span>@Almirstark</p>
+        <p class="P3"><span><img src="face.svg"></span>Almirstark</p>
+    </div>
+    
+      <button class="Btn1">Jogador 1 <p>X</p></button>
+      <button class="Btn2">Jogador 2 <p>O</p></button>
+  <div id="react-root">
+      
+      
+      <div data-reactroot="" class=" __style_df" style="align-items: stretch; background-color: transparent; border-style: solid; border-width: 0px; bottom: 0px; box-sizing: border-box; color: inherit; flex-basis: auto; flex-direction: column; flex-shrink: 0; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; left: 0px; list-style: none; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: absolute; right: 0px; text-align: inherit; text-decoration: none; top: 0px; -webkit-box-align: stretch; -webkit-box-orient: vertical; -webkit-box-direction: normal;"><div class=" __style_df" style="align-items: center;background-color: transparent;border-style: solid;border-width: 0px;box-sizing: border-box;color: inherit;flex: 1 1 auto;flex-direction: column;font-style: inherit;font-variant: inherit;font-weight: inherit;font-stretch: inherit;font-size: inherit;line-height: inherit;font-family: inherit;justify-content: center;list-style: none;margin: 0px 0px 0px 0px;top: 50%;min-height: 0px;min-width: 0px;padding: 0px;position: relative;text-align: inherit;text-decoration: none;-webkit-box-align: center;-webkit-box-orient: vertical;-webkit-box-direction: normal;-webkit-box-pack: center;"><span class="" style="color: inherit; display: inline; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: 39px; line-height: inherit; font-family: Chalkduster; margin: 0px 0px 20px; padding: 0px; text-decoration: none; word-wrap: break-word;"></span><div class=" __style_df" style="align-items: stretch; background-color: rgb(255, 255, 255); border-radius: 10px; border-style: solid; border-width: 0px; box-sizing: border-box; color: inherit; flex-basis: auto; flex-direction: column; flex-shrink: 0; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; list-style: none; margin: 0px; min-height: 0px; min-width: 0px; padding: 5px; position: relative; text-align: inherit; text-decoration: none; -webkit-box-align: stretch; -webkit-box-orient: vertical; -webkit-box-direction: normal;"><div class=" __style_df" style="align-items: stretch; background-color: transparent; border-style: solid; border-width: 0px; box-sizing: border-box; color: inherit; flex-basis: auto; flex-direction: row; flex-shrink: 0; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; list-style: none; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; text-align: inherit; text-decoration: none; -webkit-box-align: stretch; -webkit-box-orient: horizontal; -webkit-box-direction: normal;"><button tabindex="0" class=" __style_df" role="button" type="button" style="align-items: stretch; background-color: transparent; border-style: solid; border-width: 0px; box-sizing: border-box; color: inherit; cursor: pointer; flex-basis: auto; flex-direction: column; flex-shrink: 0; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; list-style: none; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; text-align: inherit; text-decoration: none; user-select: none; -webkit-box-align: stretch; -webkit-box-orient: vertical; -webkit-box-direction: normal;"><span class=" __style_df" style="align-items: center; background-color: rgb(39, 174, 96); border-radius: 5px; border-style: solid; border-width: 0px; box-sizing: border-box; color: inherit; flex: 1 1 auto; flex-direction: column; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; height: 80px; justify-content: center; list-style: none; margin: 5px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; text-align: inherit; text-decoration: none; width: 80px; -webkit-box-align: center; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-box-pack: center;"><span class="" style="border-radius: 5px; color: inherit; display: inline; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: 50px; line-height: inherit; font-family: AvenirNext-Bold; margin: 0px; padding: 0px; text-decoration: none; word-wrap: break-word;"></span></span></button><button tabindex="0" class=" __style_df" role="button" type="button" style="align-items: stretch; background-color: transparent; border-style: solid; border-width: 0px; box-sizing: border-box; color: inherit; cursor: pointer; flex-basis: auto; flex-direction: column; flex-shrink: 0; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; list-style: none; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; text-align: inherit; text-decoration: none; user-select: none; -webkit-box-align: stretch; -webkit-box-orient: vertical; -webkit-box-direction: normal;"><span class=" __style_df" style="align-items: center; background-color: rgb(39, 174, 96); border-radius: 5px; border-style: solid; border-width: 0px; box-sizing: border-box; color: inherit; flex: 1 1 auto; flex-direction: column; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; height: 80px; justify-content: center; list-style: none; margin: 5px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; text-align: inherit; text-decoration: none; width: 80px; -webkit-box-align: center; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-box-pack: center;"><span class="" style="border-radius: 5px; color: inherit; display: inline; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: 50px; line-height: inherit; font-family: AvenirNext-Bold; margin: 0px; padding: 0px; text-decoration: none; word-wrap: break-word;"></span></span></button><button tabindex="0" class=" __style_df" role="button" type="button" style="align-items: stretch; background-color: transparent; border-style: solid; border-width: 0px; box-sizing: border-box; color: inherit; cursor: pointer; flex-basis: auto; flex-direction: column; flex-shrink: 0; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; list-style: none; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; text-align: inherit; text-decoration: none; user-select: none; -webkit-box-align: stretch; -webkit-box-orient: vertical; -webkit-box-direction: normal;"><span class=" __style_df" style="align-items: center; background-color: rgb(39, 174, 96); border-radius: 5px; border-style: solid; border-width: 0px; box-sizing: border-box; color: inherit; flex: 1 1 auto; flex-direction: column; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; height: 80px; justify-content: center; list-style: none; margin: 5px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; text-align: inherit; text-decoration: none; width: 80px; -webkit-box-align: center; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-box-pack: center;"><span class="" style="border-radius: 5px; color: inherit; display: inline; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: 50px; line-height: inherit; font-family: AvenirNext-Bold; margin: 0px; padding: 0px; text-decoration: none; word-wrap: break-word;"></span></span></button></div><div class=" __style_df" style="align-items: stretch; background-color: transparent; border-style: solid; border-width: 0px; box-sizing: border-box; color: inherit; flex-basis: auto; flex-direction: row; flex-shrink: 0; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; list-style: none; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; text-align: inherit; text-decoration: none; -webkit-box-align: stretch; -webkit-box-orient: horizontal; -webkit-box-direction: normal;"><button tabindex="0" class=" __style_df" role="button" type="button" style="align-items: stretch; background-color: transparent; border-style: solid; border-width: 0px; box-sizing: border-box; color: inherit; cursor: pointer; flex-basis: auto; flex-direction: column; flex-shrink: 0; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; list-style: none; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; text-align: inherit; text-decoration: none; user-select: none; -webkit-box-align: stretch; -webkit-box-orient: vertical; -webkit-box-direction: normal;"><span class=" __style_df" style="align-items: center; background-color: rgb(39, 174, 96); border-radius: 5px; border-style: solid; border-width: 0px; box-sizing: border-box; color: inherit; flex: 1 1 auto; flex-direction: column; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; height: 80px; justify-content: center; list-style: none; margin: 5px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; text-align: inherit; text-decoration: none; width: 80px; -webkit-box-align: center; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-box-pack: center;"><span class="" style="border-radius: 5px; color: inherit; display: inline; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: 50px; line-height: inherit; font-family: AvenirNext-Bold; margin: 0px; padding: 0px; text-decoration: none; word-wrap: break-word;"></span></span></button><button tabindex="0" class=" __style_df" role="button" type="button" style="align-items: stretch; background-color: transparent; border-style: solid; border-width: 0px; box-sizing: border-box; color: inherit; cursor: pointer; flex-basis: auto; flex-direction: column; flex-shrink: 0; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; list-style: none; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; text-align: inherit; text-decoration: none; user-select: none; -webkit-box-align: stretch; -webkit-box-orient: vertical; -webkit-box-direction: normal;"><span class=" __style_df" style="align-items: center; background-color: rgb(39, 174, 96); border-radius: 5px; border-style: solid; border-width: 0px; box-sizing: border-box; color: inherit; flex: 1 1 auto; flex-direction: column; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; height: 80px; justify-content: center; list-style: none; margin: 5px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; text-align: inherit; text-decoration: none; width: 80px; -webkit-box-align: center; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-box-pack: center;"><span class="" style="border-radius: 5px; color: inherit; display: inline; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: 50px; line-height: inherit; font-family: AvenirNext-Bold; margin: 0px; padding: 0px; text-decoration: none; word-wrap: break-word;"></span></span></button><button tabindex="0" class=" __style_df" role="button" type="button" style="align-items: stretch; background-color: transparent; border-style: solid; border-width: 0px; box-sizing: border-box; color: inherit; cursor: pointer; flex-basis: auto; flex-direction: column; flex-shrink: 0; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; list-style: none; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; text-align: inherit; text-decoration: none; user-select: none; -webkit-box-align: stretch; -webkit-box-orient: vertical; -webkit-box-direction: normal;"><span class=" __style_df" style="align-items: center; background-color: rgb(39, 174, 96); border-radius: 5px; border-style: solid; border-width: 0px; box-sizing: border-box; color: inherit; flex: 1 1 auto; flex-direction: column; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; height: 80px; justify-content: center; list-style: none; margin: 5px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; text-align: inherit; text-decoration: none; width: 80px; -webkit-box-align: center; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-box-pack: center;"><span class="" style="border-radius: 5px; color: inherit; display: inline; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: 50px; line-height: inherit; font-family: AvenirNext-Bold; margin: 0px; padding: 0px; text-decoration: none; word-wrap: break-word;"></span></span></button></div><div class=" __style_df" style="align-items: stretch; background-color: transparent; border-style: solid; border-width: 0px; box-sizing: border-box; color: inherit; flex-basis: auto; flex-direction: row; flex-shrink: 0; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; list-style: none; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; text-align: inherit; text-decoration: none; -webkit-box-align: stretch; -webkit-box-orient: horizontal; -webkit-box-direction: normal;"><button tabindex="0" class=" __style_df" role="button" type="button" style="align-items: stretch; background-color: transparent; border-style: solid; border-width: 0px; box-sizing: border-box; color: inherit; cursor: pointer; flex-basis: auto; flex-direction: column; flex-shrink: 0; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; list-style: none; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; text-align: inherit; text-decoration: none; user-select: none; -webkit-box-align: stretch; -webkit-box-orient: vertical; -webkit-box-direction: normal;"><span class=" __style_df" style="align-items: center; background-color: rgb(39, 174, 96); border-radius: 5px; border-style: solid; border-width: 0px; box-sizing: border-box; color: inherit; flex: 1 1 auto; flex-direction: column; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; height: 80px; justify-content: center; list-style: none; margin: 5px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; text-align: inherit; text-decoration: none; width: 80px; -webkit-box-align: center; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-box-pack: center;"><span class="" style="border-radius: 5px; color: inherit; display: inline; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: 50px; line-height: inherit; font-family: AvenirNext-Bold; margin: 0px; padding: 0px; text-decoration: none; word-wrap: break-word;"></span></span></button><button tabindex="0" class=" __style_df" role="button" type="button" style="align-items: stretch; background-color: transparent; border-style: solid; border-width: 0px; box-sizing: border-box; color: inherit; cursor: pointer; flex-basis: auto; flex-direction: column; flex-shrink: 0; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; list-style: none; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; text-align: inherit; text-decoration: none; user-select: none; -webkit-box-align: stretch; -webkit-box-orient: vertical; -webkit-box-direction: normal;"><span class=" __style_df" style="align-items: center; background-color: rgb(39, 174, 96); border-radius: 5px; border-style: solid; border-width: 0px; box-sizing: border-box; color: inherit; flex: 1 1 auto; flex-direction: column; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; height: 80px; justify-content: center; list-style: none; margin: 5px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; text-align: inherit; text-decoration: none; width: 80px; -webkit-box-align: center; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-box-pack: center;"><span class="" style="border-radius: 5px; color: inherit; display: inline; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: 50px; line-height: inherit; font-family: AvenirNext-Bold; margin: 0px; padding: 0px; text-decoration: none; word-wrap: break-word;"></span></span></button><button tabindex="0" class=" __style_df" role="button" type="button" style="align-items: stretch; background-color: transparent; border-style: solid; border-width: 0px; box-sizing: border-box; color: inherit; cursor: pointer; flex-basis: auto; flex-direction: column; flex-shrink: 0; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; list-style: none; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; text-align: inherit; text-decoration: none; user-select: none; -webkit-box-align: stretch; -webkit-box-orient: vertical; -webkit-box-direction: normal;"><span class=" __style_df" style="align-items: center; background-color: rgb(39, 174, 96); border-radius: 5px; border-style: solid; border-width: 0px; box-sizing: border-box; color: inherit; flex: 1 1 auto; flex-direction: column; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; height: 80px; justify-content: center; list-style: none; margin: 5px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; text-align: inherit; text-decoration: none; width: 80px; -webkit-box-align: center; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-box-pack: center;"><span class="" style="border-radius: 5px; color: inherit; display: inline; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: 50px; line-height: inherit; font-family: AvenirNext-Bold; margin: 0px; padding: 0px; text-decoration: none; word-wrap: break-word;"></span></span></button></div></div><div class=" __style_df" style="align-items: stretch; background-color: transparent; border-style: solid; border-width: 0px; box-sizing: border-box; color: inherit; flex-basis: auto; flex-direction: column; flex-shrink: 0; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; list-style: none; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; text-align: inherit; text-decoration: none; -webkit-box-align: stretch; -webkit-box-orient: vertical; -webkit-box-direction: normal;"></div></div></div></div>
+    <script src="eJaLZd_data/stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26.js"></script>
+
+  <script src="eJaLZd_data/react.js"></script>
+<script src="eJaLZd_data/ReactNative.js"></script>
+
+    <script>
+    /**
+ * The examples provided by Facebook are for non-commercial testing and
+ * evaluation purposes only.
+ *
+ * Facebook reserves all rights not expressly granted.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+ * OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NON INFRINGEMENT. IN NO EVENT SHALL
+ * FACEBOOK BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN
+ * AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+ * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ *
+ * @providesModule TicTacToeApp
+ * 
+ */
+'use strict';
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var _ReactNative = ReactNative;
+var AppRegistry = _ReactNative.AppRegistry;
+var StyleSheet = _ReactNative.StyleSheet;
+var Text = _ReactNative.Text;
+var TouchableHighlight = _ReactNative.TouchableHighlight;
+var View = _ReactNative.View;
+
+var Board = function () {
+  function Board() {
+    _classCallCheck(this, Board);
+
+    var size = 3;
+    var grid = Array(size);
+    for (var i = 0; i < size; i++) {if (window.CP.shouldStopExecution(2)){break;}
+      var row = Array(size);
+      for (var j = 0; j < size; j++) {if (window.CP.shouldStopExecution(1)){break;}
+        row[j] = 0;
+      }
+window.CP.exitedLoop(1);
+
+      grid[i] = row;
+    }
+window.CP.exitedLoop(2);
+
+    this.grid = grid;
+
+    this.turn = 1;
+  }
+
+  Board.prototype.mark = function mark(row, col, player) {
+    this.grid[row][col] = player;
+    return this;
+  };
+
+  Board.prototype.hasMark = function hasMark(row, col) {
+    return this.grid[row][col] !== 0;
+  };
+
+  Board.prototype.winner = function winner() {
+    for (var i = 0; i < 3; i++) {if (window.CP.shouldStopExecution(3)){break;}
+      if (this.grid[i][0] !== 0 && this.grid[i][0] === this.grid[i][1] && this.grid[i][0] === this.grid[i][2]) {
+        return this.grid[i][0];
+      }
+    }
+window.CP.exitedLoop(3);
+
+
+    for (var i = 0; i < 3; i++) {if (window.CP.shouldStopExecution(4)){break;}
+      if (this.grid[0][i] !== 0 && this.grid[0][i] === this.grid[1][i] && this.grid[0][i] === this.grid[2][i]) {
+        return this.grid[0][i];
+      }
+    }
+window.CP.exitedLoop(4);
+
+
+    if (this.grid[0][0] !== 0 && this.grid[0][0] === this.grid[1][1] && this.grid[0][0] === this.grid[2][2]) {
+      return this.grid[0][0];
+    }
+
+    if (this.grid[0][2] !== 0 && this.grid[0][2] === this.grid[1][1] && this.grid[0][2] === this.grid[2][0]) {
+      return this.grid[0][2];
+    }
+
+    return null;
+  };
+
+  Board.prototype.tie = function tie() {
+    for (var i = 0; i < 3; i++) {if (window.CP.shouldStopExecution(6)){break;}
+      for (var j = 0; j < 3; j++) {if (window.CP.shouldStopExecution(5)){break;}
+        if (this.grid[i][j] === 0) {
+          return false;
+        }
+      }
+window.CP.exitedLoop(5);
+
+    }
+window.CP.exitedLoop(6);
+
+    return this.winner() === null;
+  };
+
+  return Board;
+}();
+
+var Cell = React.createClass({
+  displayName: 'Cell',
+  cellStyle: function cellStyle() {
+    switch (this.props.player) {
+      case 1:
+        return styles.cellX;
+      case 2:
+        return styles.cellO;
+      default:
+        return null;
+    }
+  },
+  textStyle: function textStyle() {
+    switch (this.props.player) {
+      case 1:
+        return styles.cellTextX;
+      case 2:
+        return styles.cellTextO;
+      default:
+        return {};
+    }
+  },
+  textContents: function textContents() {
+    switch (this.props.player) {
+      case 1:
+        return 'X';
+      case 2:
+        return 'O';
+      default:
+        return '';
+    }
+  },
+  render: function render() {
+    return React.createElement(
+      TouchableHighlight,
+      {
+        onPress: this.props.onPress,
+        activeOpacity: 0.5 },
+      React.createElement(
+        View,
+        { style: [styles.cell, this.cellStyle()] },
+        React.createElement(
+          Text,
+          { style: [styles.cellText, this.textStyle()] },
+          this.textContents()
+        )
+      )
+    );
+  }
+});
+
+var GameEndOverlay = React.createClass({
+  displayName: 'GameEndOverlay',
+  render: function render() {
+    var board = this.props.board;
+
+    var tie = board.tie();
+    var winner = board.winner();
+    if (!winner && !tie) {
+      return React.createElement(View, null);
+    }
+
+    var message;
+    if (tie) {
+      message = 'Ninguém venceu os dois são burros';
+    } else {
+      message = (winner === 1 ? 'Jogador 1' : 'Jogador 2') + ' Venceu!';
+    }
+
+    return React.createElement(
+      View,
+      { style: styles.overlay },
+      React.createElement(
+        Text,
+        { style: styles.overlayMessage },
+        message
+      ),
+      React.createElement(
+        TouchableHighlight,
+        {
+          onPress: this.props.onRestart,
+          activeOpacity: 0.5 },
+        React.createElement(
+          View,
+          { style: styles.newGame },
+          React.createElement(
+            Text,
+            { style: styles.newGameText },
+            'New Game'
+          )
+        )
+      )
+    );
+  }
+});
+
+var TicTacToeApp = React.createClass({
+  displayName: 'TicTacToeApp',
+  getInitialState: function getInitialState() {
+    return { board: new Board(), player: 1 };
+  },
+  restartGame: function restartGame() {
+    this.setState(this.getInitialState());
+  },
+  nextPlayer: function nextPlayer() {
+    return this.state.player === 1 ? 2 : 1;
+  },
+  handleCellPress: function handleCellPress(row, col) {
+    if (this.state.board.hasMark(row, col)) {
+      return;
+    }
+
+    this.setState({
+      board: this.state.board.mark(row, col, this.state.player),
+      player: this.nextPlayer()
+    });
+  },
+  render: function render() {
+    var _this = this;
+
+    var rows = this.state.board.grid.map(function (cells, row) {
+      return React.createElement(
+        View,
+        { key: 'row' + row, style: styles.row },
+        cells.map(function (player, col) {
+          return React.createElement(Cell, {
+            key: 'cell' + col,
+            player: player,
+            onPress: _this.handleCellPress.bind(_this, row, col)
+          });
+        })
+      );
+    });
+
+    return React.createElement(
+      View,
+      { style: styles.container },
+      React.createElement(
+        Text,
+        { style: styles.title },
+        ''
+      ),
+      React.createElement(
+        View,
+        { style: styles.board },
+        rows
+      ),
+      React.createElement(GameEndOverlay, {
+        board: this.state.board,
+        onRestart: this.restartGame
+      })
+    );
+  }
+});
+
+var styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    top:'50%',
+    marginTop:'0px',
+    height:'100%',
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
+  title: {
+    fontFamily: 'Chalkduster',
+    fontSize: 39,
+    marginBottom: 20
+  },
+  board: {
+    padding: 5,
+    backgroundColor: '#ffffff',
+    borderRadius: 10
+  },
+  row: {
+    flexDirection: 'row'
+  },
+
+  // CELL
+
+  cell: {
+    width: 80,
+    height: 80,
+    borderRadius: 5,
+    backgroundColor: '#27ae60',
+    margin: 5,
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
+  cellX: {
+    backgroundColor: '#2c3e50'
+  },
+  cellO: {
+    backgroundColor: '#c0392b'
+  },
+
+  // CELL TEXT
+
+  cellText: {
+    borderRadius: 5,
+    fontSize: 50,
+    fontFamily: 'AvenirNext-Bold'
+  },
+  cellTextX: {
+    color: '#19a9e5'
+  },
+  cellTextO: {
+    color: '#f1c40f'
+  },
+
+  // GAME OVER
+
+  overlay: {
+    position: 'absolute',
+    top: 0,
+    bottom: 0,
+    left: 0,
+    right: 0,
+    backgroundColor: '',
+    flex: 1,
+    textAlign:"center",
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
+  overlayMessage: {
+    fontSize: 23,
+    color:'#ffffff',
+    fontFamily:"arial",
+    textIndent:'center',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
+  newGame: {
+    marginTop:"15px",
+    backgroundColor: '#27ae60',
+    padding: 20,
+    borderRadius: 5
+  },
+  newGameText: {
+    color: 'white',
+    fontSize: 20,
+    fontFamily: 'arial'
+  }
+});
+
+AppRegistry.registerComponent('TicTacToeApp', function () {
+  return TicTacToeApp;
+});
+
+AppRegistry.runApplication('TicTacToeApp', { rootTag: document.getElementById('react-root') });
+  //# sourceURL=pen.js
+  </script>
+
+  
+  
+
+
+
+ </body></html>
